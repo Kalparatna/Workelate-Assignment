@@ -17,6 +17,22 @@ A real-time collaborative whiteboard application built with the MERN stack (Mong
 - **Real-time Communication**: Socket.io
 - **Styling**: CSS/Styled Components
 
+## 🧪 Results
+
+Below are some screenshots of the application in action:
+
+### 🎨 Whiteboard Collaboration with Multiple Users  
+![Whiteboard Collaboration](./Results/1.png)
+
+### 🧑‍🤝‍🧑 User Cursors Display  
+![User Cursors](./Results/2.png)
+
+### 🎛️ Drawing Toolbar with Color & Stroke Controls  
+![Toolbar](./Results/3.png)
+
+### 🧼 Canvas Clear Function  
+![Canvas Clear](./Results/4.png)
+
 ## Setup Instructions
 
 ### Prerequisites
