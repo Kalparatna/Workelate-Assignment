@@ -30,7 +30,7 @@ A real-time collaborative whiteboard application built with the MERN stack (Mong
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Kalparatna/Workelate-Assignment.git
 cd collaborative-whiteboard
 ```
 
@@ -51,7 +51,7 @@ npm install
    - Add the following variables:
 
 ```
-MONGODB_URI=<your-mongodb-connection-string>
+MONGODB_URI= add your mongodb string
 PORT=5000
 ```
 
@@ -158,27 +158,7 @@ Drawing data is stored as incremental updates rather than full canvas states to 
 4. Server broadcasts actions to all connected clients in the same room
 5. Clients render the received drawing actions on their local canvas
 
-## Deployment Guide
 
-### Backend Deployment (Heroku)
-
-1. Create a Heroku account and install the Heroku CLI
-2. Login to Heroku CLI: `heroku login`
-3. Create a new Heroku app: `heroku create collaborative-whiteboard-api`
-4. Add MongoDB add-on or set environment variable for external MongoDB:
-   `heroku config:set MONGODB_URI=<your-mongodb-connection-string>`
-5. Deploy the server: `git subtree push --prefix server heroku main`
-
-### Frontend Deployment (Netlify/Vercel)
-
-1. Create a production build: `cd client && npm run build`
-2. Deploy using Netlify/Vercel CLI or connect your GitHub repository for automatic deployments
-3. Set the environment variable for the backend API URL:
-   `REACT_APP_API_URL=https://your-heroku-app-name.herokuapp.com`
-
-### Important Considerations
-
-- Ensure CORS is properly configured on the backend
 - Set up proper error handling and reconnection logic for Socket.io
 - Consider implementing a cleanup job for inactive rooms
 - Monitor performance and optimize as needed
